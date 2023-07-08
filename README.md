@@ -1,18 +1,30 @@
 # JobBoard
 
-To start your Phoenix server:
+An Elixir Job Board web app. Uses Phoenix LiveView, DaisyUI, and Ecto.
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Setup
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+```bash
+$ git clone git@github.com:ZaneH-YT/job_board.git
+$ cd job_board
+$ mix deps.get
+$ mix ecto.create # check ./config/dev.exs
+$ mix ecto.migrate
+```
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+## Seed Data
 
-## Learn more
+This will populate the database with dummy (seed) data.
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+```bash
+$ mix run ./priv/repo/seeds.exs
+```
+
+## Run
+
+```bash
+$ iex -S mix phx.server # or
+$ mix phx.server
+```
+
+- Open browser to `localhost:4000`
