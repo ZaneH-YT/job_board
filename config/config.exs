@@ -18,7 +18,7 @@ config :job_board, JobBoardWeb.Endpoint,
     layout: false
   ],
   pubsub_server: JobBoard.PubSub,
-  live_view: [signing_salt: "T2gMoXkd"]
+  live_view: [signing_salt: "DHAg22Tn"]
 
 # Configures the mailer
 #

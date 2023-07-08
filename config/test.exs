@@ -1,8 +1,5 @@
 import Config
 
-# Only in tests, remove the complexity from the password hashing algorithm
-config :bcrypt_elixir, :log_rounds, 1
-
 # Configure your database
 #
 # The MIX_TEST_PARTITION environment variable can be used
@@ -20,7 +17,7 @@ config :job_board, JobBoard.Repo,
 # you can enable the server option below.
 config :job_board, JobBoardWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "pMct67xhFCYErSxRMGbXmtLXRc6eLV3EQvlEtZ9x95tEaqcipUhpxqpNwyzv3tu+",
+  secret_key_base: "+9le+bxlZKJguNpI5BP2e57fsJwZtEfvWMnR0mc9jefWoIojfufeZ96WKZkeRoaS",
   server: false
 
 # In test we don't send emails.
