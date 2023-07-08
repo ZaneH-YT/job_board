@@ -1,12 +1,12 @@
 defmodule JobBoard.Jobs.Listing do
   use Ecto.Schema
   import Ecto.Changeset
-  alias JobBoard.Accounts.{User, UserSave}
   alias JobBoard.Jobs.Category
+  alias JobBoard.Accounts.{User, UserSave}
 
   schema "listings" do
     field(:title, :string)
-    field(:description, :string)
+    field(:description_md, :string)
     field(:company_image_url, :string)
     field(:company_web_url, :string)
     field(:company_name, :string)
@@ -24,7 +24,7 @@ defmodule JobBoard.Jobs.Listing do
     listing
     |> cast(params, [
       :title,
-      :description,
+      :description_md,
       :company_image_url,
       :company_web_url,
       :company_name,
@@ -34,7 +34,7 @@ defmodule JobBoard.Jobs.Listing do
     |> validate_required([
       :title,
       :company_name,
-      :description,
+      :description_md,
       :category_id
     ])
   end

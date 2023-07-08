@@ -1,12 +1,12 @@
 defmodule JobBoard.Jobs.Category do
   use Ecto.Schema
-  alias JobBoard.Jobs.Listing
   import Ecto.Changeset
+  alias JobBoard.Jobs.Listing
 
   schema "categories" do
-    field :name, :string
+    field(:name, :string)
 
-    has_many :listings, Listing
+    has_many(:listings, Listing)
   end
 
   def changeset(category, params \\ %{}) do

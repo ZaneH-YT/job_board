@@ -7,7 +7,7 @@ defmodule JobBoardWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_job_board_key",
-    signing_salt: "Ox5xlXvO",
+    signing_salt: "tVpAxgkM",
     same_site: "Lax"
   ]
 

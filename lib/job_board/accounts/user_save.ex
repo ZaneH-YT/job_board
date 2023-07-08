@@ -5,8 +5,8 @@ defmodule JobBoard.Accounts.UserSave do
   import Ecto.Changeset
 
   schema "user_saves" do
-    belongs_to :listing, Listing
-    belongs_to :user, User
+    belongs_to(:listing, Listing)
+    belongs_to(:user, User)
   end
 
   def changeset(user_save, params \\ %{}) do

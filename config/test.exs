@@ -20,7 +20,7 @@ config :job_board, JobBoard.Repo,
 # you can enable the server option below.
 config :job_board, JobBoardWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "N7J37mnJeaeB6XGYNsBGeqUkVvplpXoFPBaXNbP17133jKOZh0Sl6/bhtKOvgGY/",
+  secret_key_base: "pMct67xhFCYErSxRMGbXmtLXRc6eLV3EQvlEtZ9x95tEaqcipUhpxqpNwyzv3tu+",
   server: false
 
 # In test we don't send emails.

@@ -23,7 +23,7 @@ config :job_board, JobBoardWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "ITiOVp/P3bGd00BU0IRCt8LNVOLZsAUfNjl10N8D+Cg7gjRHRL69o4ka7soGS9o4",
+  secret_key_base: "4wVfjw1DH+HfJk6kERQvHoIzyXmcnfFX8+rDY21nlBR5GeE/YhSQPEmAeR3T5BAY",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:default, ~w(--watch)]}
