@@ -84,12 +84,12 @@ defmodule JobBoardWeb.NewListingLive do
         </div>
 
         <div>
-          <.label for="description_md">Description</.label>
+          <.label for="description">Description</.label>
           <.input
             type="textarea"
-            field={@form[:description_md]}
-            id="description_md"
-            name="description_md"
+            field={@form[:description]}
+            id="description"
+            name="description"
             placeholder="Give details about the position..."
           />
         </div>

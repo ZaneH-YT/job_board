@@ -44,7 +44,7 @@ defmodule JobBoard.Jobs do
       from(l in Listing,
         where:
           fragment("LOWER(?) LIKE LOWER(?)", l.title, ^"%#{search_term}%") or
-            fragment("LOWER(?) LIKE LOWER(?)", l.description_md, ^"%#{search_term}%") or
+            fragment("LOWER(?) LIKE LOWER(?)", l.description, ^"%#{search_term}%") or
             fragment("LOWER(?) LIKE LOWER(?)", l.company_name, ^"%#{search_term}%"),
         preload: [:category]
       )

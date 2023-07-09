@@ -6,7 +6,7 @@ defmodule JobBoard.Jobs.Listing do
 
   schema "listings" do
     field(:title, :string)
-    field(:description_md, :string)
+    field(:description, :string)
     field(:company_image_url, :string)
     field(:company_web_url, :string)
     field(:company_name, :string)
@@ -24,7 +24,7 @@ defmodule JobBoard.Jobs.Listing do
     listing
     |> cast(params, [
       :title,
-      :description_md,
+      :description,
       :company_image_url,
       :company_web_url,
       :company_name,
@@ -34,7 +34,7 @@ defmodule JobBoard.Jobs.Listing do
     |> validate_required([
       :title,
       :company_name,
-      :description_md,
+      :description,
       :category_id
     ])
   end

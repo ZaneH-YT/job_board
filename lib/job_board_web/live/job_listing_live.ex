@@ -89,7 +89,7 @@ defmodule JobBoardWeb.JobListingLive do
           <.icon name="hero-trash" />
         </button>
       <% end %>
-      <p class="whitespace-pre"><%= @listing.description_md %></p>
+      <p class="whitespace-pre"><%= @listing.description %></p>
     </article>
     """
   end

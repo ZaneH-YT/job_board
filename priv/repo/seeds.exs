@@ -36,7 +36,7 @@ Repo.insert!(testing_and_qa_category)
 demo_job_1 = %Listing{
   id: 1,
   title: "Demo Job 1",
-  description_md: "Open position at Demo Company.\n\nThis is a demo listing.",
+  description: "Open position at Demo Company.\n\nThis is a demo listing.",
   category_id: 1,
   company_name: "Demo Company",
   company_web_url: "https://google.com/"
@@ -45,7 +45,7 @@ demo_job_1 = %Listing{
 demo_job_2 = %Listing{
   id: 2,
   title: "Demo Job 2",
-  description_md: "Test description for job listing 2.",
+  description: "Test description for job listing 2.",
   category_id: 2,
   company_name: "II Test Co.",
   company_web_url: "https://google.com/"
